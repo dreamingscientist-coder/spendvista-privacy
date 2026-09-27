@@ -30,7 +30,7 @@
 </nav>
 <section id="english" class="language-panel">
 <h2>English</h2>
-<p><strong>Effective date:</strong> 26 September 2026</p>
+<p><strong>Effective date:</strong> 27 September 2026</p>
 <p>SpendVista ("the app") is developed by Vu Khac, an independent developer based in France ("we", "us"). This policy explains what data the app handles, why, and the choices you have. For the personal data described here, we are the data controller under the EU General Data Protection Regulation (GDPR).</p>
 <p><strong>Contact:</strong> dreamingscientist@gmail.com</p>
 <h3>1. Summary</h3>
@@ -61,10 +61,12 @@
 <p><strong>Legal basis:</strong> performing our contract with you (providing the account you asked for), and our legitimate interest in keeping sign-in secure.</p>
 <p><strong>What does not happen:</strong> your receipts are <strong>not uploaded</strong> when you sign in. Each account has its own local database on the device. After you sign in, the app may offer to move the receipts you created as a guest into your account. This happens only if you agree, and only on your device.</p>
 <h3>4. SpendVista Pro (in-app purchase)</h3>
-<p>Pro is a one-time (non-consumable) purchase processed by Apple or Google under their own privacy policies.</p>
+<p>Pro is a one-time (non-consumable) purchase processed by Apple or Google under their own privacy policies. RevenueCat verifies the purchase and manages your Pro entitlement.</p>
 <ul>
 <li>We <strong>do not receive</strong> your name, payment card or billing address.</li>
-<li>The app receives only a purchase confirmation from the store (product ID and transaction details). It uses this to unlock Pro and to restore your purchase. Your Pro status is saved on your device.</li>
+<li>RevenueCat processes a pseudonymous app user identifier, product and transaction information, and store/platform information to validate the purchase, unlock Pro and restore it.</li>
+<li>If you connect a SpendVista account, the entitlement is associated with your Firebase user ID so Pro can be available on iOS and Android when you use the same linked account.</li>
+<li>Your receipt images, extracted receipt text and spending data are not sent to RevenueCat.</li>
 <li><strong>Legal basis:</strong> performing our contract with you.</li>
 </ul>
 <p>Free and Pro users are treated the same way: Pro unlocks features, <strong>not additional data collection</strong>.</p>
@@ -121,6 +123,11 @@
 <td>https://firebase.google.com/support/privacy</td>
 </tr>
 <tr>
+<td>RevenueCat</td>
+<td>Purchase validation and cross-platform Pro entitlement</td>
+<td>https://www.revenuecat.com/privacy</td>
+</tr>
+<tr>
 <td>Apple (Sign in with Apple, App Store)</td>
 <td>Sign-in, purchases</td>
 <td>https://www.apple.com/legal/privacy/</td>
@@ -167,7 +174,7 @@
 </section>
 <section id="francais" class="language-panel" lang="fr" hidden>
 <h2>Français</h2>
-<p><strong>Date d'entrée en vigueur :</strong> 26 septembre 2026</p>
+<p><strong>Date d'entrée en vigueur :</strong> 27 septembre 2026</p>
 <p>SpendVista (« l'application ») est développée par Vu Khac, développeur indépendant établi en France (« nous »). Cette politique explique quelles données l'application traite, pourquoi, et quels sont vos choix. Pour les données personnelles décrites ici, nous sommes responsable du traitement au sens du Règlement général sur la protection des données (RGPD).</p>
 <p><strong>Contact :</strong> dreamingscientist@gmail.com</p>
 <h3>1. En bref</h3>
@@ -198,10 +205,12 @@
 <p><strong>Base légale :</strong> l'exécution du contrat qui nous lie (fournir le compte que vous avez demandé) et notre intérêt légitime à sécuriser la connexion.</p>
 <p><strong>Ce qui ne se passe pas :</strong> vos tickets <strong>ne sont pas envoyés</strong> en ligne lorsque vous vous connectez. Chaque compte a sa propre base de données locale sur l'appareil. Après la connexion, l'application peut vous proposer de transférer vers votre compte les tickets créés en mode invité. Cela se fait uniquement avec votre accord, et uniquement sur votre appareil.</p>
 <h3>4. SpendVista Pro (achat intégré)</h3>
-<p>Pro est un achat unique (non consommable), traité par Apple ou Google selon leurs propres politiques de confidentialité.</p>
+<p>Pro est un achat unique (non consommable), traité par Apple ou Google selon leurs propres politiques de confidentialité. RevenueCat vérifie l'achat et gère votre droit d'accès Pro.</p>
 <ul>
 <li>Nous <strong>ne recevons pas</strong> votre nom, votre carte bancaire ni votre adresse de facturation.</li>
-<li>L'application reçoit uniquement une confirmation d'achat de la boutique (identifiant du produit et détails de la transaction). Elle s'en sert pour débloquer Pro et restaurer votre achat. Votre statut Pro est enregistré sur votre appareil.</li>
+<li>RevenueCat traite un identifiant utilisateur pseudonyme de l'application, les informations sur le produit et la transaction, ainsi que les informations sur la boutique et la plateforme, afin de valider l'achat, débloquer Pro et le restaurer.</li>
+<li>Si vous connectez un compte SpendVista, le droit d'accès est associé à votre identifiant utilisateur Firebase afin que Pro soit disponible sur iOS et Android lorsque vous utilisez le même compte lié.</li>
+<li>Les images de vos tickets, le texte extrait et vos données de dépenses ne sont pas envoyés à RevenueCat.</li>
 <li><strong>Base légale :</strong> l'exécution du contrat qui nous lie.</li>
 </ul>
 <p>Les versions gratuite et Pro traitent vos données de la même façon : Pro débloque des fonctionnalités, <strong>pas de collecte supplémentaire</strong>.</p>
@@ -256,6 +265,11 @@
 <td>Google Firebase Authentication</td>
 <td>Connexion au compte</td>
 <td>https://firebase.google.com/support/privacy</td>
+</tr>
+<tr>
+<td>RevenueCat</td>
+<td>Validation des achats et droit d'accès Pro multiplateforme</td>
+<td>https://www.revenuecat.com/privacy</td>
 </tr>
 <tr>
 <td>Apple (Connexion avec Apple, App Store)</td>
