@@ -39,7 +39,7 @@
 <p><strong>Effective date:</strong> 1 November 2026</p>
 <p>SpendVista ("the app") is developed by Vu Khac, an independent developer based in France ("we", "us"). This policy explains what data the app handles, why, and the choices you have. For the personal data described here, we are the data controller under the EU General Data Protection Regulation (GDPR).</p>
 <p><strong>Contact:</strong> dreamingscientist@gmail.com</p>
-<p>This policy covers the free, ad-supported edition of SpendVista and earlier paid/Pro editions. Advertising and optional usage analytics described below apply to versions that include those services. Purchase processing applies only to paid/Pro versions; the free edition does not initialize RevenueCat.</p>
+<p>This policy describes the current free, ad-supported version of SpendVista.</p>
 <h3>1. Summary</h3>
 <ul>
 <li><strong>Your receipts and personal learning stay on your device.</strong> OCR runs locally, with no receipt cloud sync.</li>
@@ -65,20 +65,12 @@
 </ul>
 <p><strong>Where it is stored:</strong> Google Firebase Authentication (provided by Google) stores your user ID, email, name, sign-in provider, and account creation and last sign-in dates. To keep sign-in secure, Firebase also processes technical data such as your IP address and device information.</p>
 <p><strong>Why:</strong> to create and recognise your account, so the receipts for each account are kept separately on your device.</p>
-<p><strong>Account linking:</strong> you may link one Apple sign-in and one Google sign-in to the same Firebase user ID. Both sign-in methods then open the same SpendVista account and, in paid/Pro versions, use the same Pro entitlement. The app shows the linked providers and their available email or Apple relay address. Users cannot unlink providers themselves; this helps prevent repeated transfer of Pro access between unrelated accounts.</p>
+<p><strong>Account linking:</strong> you may link one Apple sign-in and one Google sign-in to the same Firebase user ID. Both sign-in methods then open the same SpendVista account and use the same local account data on that device. The app shows the linked providers and their available email or Apple relay address. Users cannot unlink providers themselves. Contact support if the wrong sign-in provider was linked.</p>
 <p><strong>Legal basis:</strong> performing our contract with you (providing the account you asked for), and our legitimate interest in keeping sign-in secure.</p>
 <p><strong>What does not happen:</strong> your receipts are <strong>not uploaded</strong> when you sign in. Each account has its own local database on the device. After you sign in, the app may offer to move the receipts you created as a guest into your account. This happens only if you agree, and only on your device.</p>
-<h3>4. Free edition and earlier Pro purchases</h3>
-<p>The current free edition includes all receipt, report and backup features without an in-app purchase. The following purchase information applies only to paid/Pro editions that still use purchase services.</p>
-<p>Pro is a one-time (non-consumable) purchase processed by Apple or Google under their own privacy policies. RevenueCat verifies the purchase and manages your Pro entitlement.</p>
-<ul>
-<li>We <strong>do not receive</strong> your name, payment card or billing address.</li>
-<li>RevenueCat processes a pseudonymous app user identifier, product and transaction information, and store/platform information to validate the purchase, unlock Pro and restore it.</li>
-<li>If you connect a SpendVista account, the entitlement is associated with your Firebase user ID so Pro can be available on iOS and Android when you use the same linked account.</li>
-<li>Your receipt images, extracted receipt text and spending data are not sent to RevenueCat.</li>
-<li><strong>Legal basis:</strong> performing our contract with you.</li>
-</ul>
-<p>Pro unlocks features; it does not upload your receipts or spending data. The purchase and account identifiers needed for validation are limited to those described above.</p>
+<h3>4. Free edition</h3>
+<p>SpendVista includes all receipt, report, insight and backup features without a paid upgrade or subscription. Advertising supports development. Watching a rewarded ad is optional and does not unlock app features. Advertising and privacy choices are explained in section 8.</p>
+<p>SpendVista does not process in-app purchases or collect payment card or billing details.</p>
 <h3>5. Device permissions</h3>
 <table>
 <thead>
@@ -113,8 +105,8 @@
 <p><strong>Currency rates:</strong> when a receipt is in a foreign currency, the app asks the free Frankfurter service (api.frankfurter.dev) for the exchange rate. It sends only the two currency codes and the purchase date. Like any website, the service can see your IP address. No receipt content or account data is sent.</p>
 <p><strong>Chinese font for PDF reports:</strong> when a PDF report needs Chinese characters, the app downloads a free font from Google Fonts. Google can see your IP address. No receipt content is sent.</p>
 <p><strong>Export and sharing:</strong> when you export or share data (for example, a spending summary), you choose where it goes: email, messaging, files, and so on. From then on, that app or service handles the data under its own policy.</p>
-<p><strong>Account-linking support:</strong> signed-in users can choose to open a support email draft when an Apple or Google account was linked by mistake. The draft automatically includes the SpendVista account ID (Firebase user ID), current sign-in provider, linked provider identifiers, available provider email or Apple relay addresses, and app version. The user can review the draft, add the incorrect and intended replacement accounts, and must send it themselves. Nothing is sent automatically. We use this information only to identify the correct account, verify the request, provide support and prevent unauthorised entitlement transfers.</p>
-<p><strong>Backup files:</strong> Users of the free edition and Pro users can create a backup containing receipts, extracted items, custom categories, learned merchant and classification rules, and language and currency settings. The backup is an unencrypted file. You choose where to save it; SpendVista does not upload, retain or have access to it. You are responsible for keeping the file secure and deleting copies you no longer need.</p>
+<p><strong>Account-linking support:</strong> signed-in users can choose to open a support email draft when an Apple or Google account was linked by mistake. The draft automatically includes the SpendVista account ID (Firebase user ID), current sign-in provider, linked provider identifiers, available provider email or Apple relay addresses, and app version. The user can review the draft, add the incorrect and intended replacement accounts, and must send it themselves. Nothing is sent automatically. We use this information only to identify the correct account, verify the request, provide support and prevent unauthorised account changes.</p>
+<p><strong>Backup files:</strong> Users can create a backup containing receipts, extracted items, custom categories, learned merchant and classification rules, and language and currency settings. The backup is an unencrypted file. You choose where to save it; SpendVista does not upload, retain or have access to it. You are responsible for keeping the file secure and deleting copies you no longer need.</p>
 <p><strong>Public recognition rules:</strong> compatible versions download a curated CSV from this GitHub Pages site at launch, at most once every 24 hours. No receipt content, personal rules or account details are sent. GitHub receives ordinary connection information such as the IP address. The last valid rules are stored locally for offline use. Personal category corrections take precedence. There is no automatic community-rule upload. <a href="data/recognition-rules.csv">View the public CSV</a>.</p>
 <h3>8. Advertising, privacy choices and optional analytics</h3>
 <p><strong>Advertising:</strong> the free edition uses Google AdMob (Google Mobile Ads SDK) for banners, interstitials around report completion and optional rewarded ads. A completed rewarded ad hides banner ads for 30 minutes; it does not disable interstitials. Receipt contents and account details are not supplied to advertising requests by SpendVista.</p>
@@ -140,18 +132,13 @@
 <td>https://firebase.google.com/support/privacy</td>
 </tr>
 <tr>
-<td>RevenueCat</td>
-<td>Paid/Pro editions only: purchase validation and cross-platform entitlement</td>
-<td>https://www.revenuecat.com/privacy</td>
-</tr>
-<tr>
 <td>Apple (Sign in with Apple, App Store)</td>
-<td>Sign-in, purchases</td>
+<td>Sign-in, app distribution and store reviews</td>
 <td>https://www.apple.com/legal/privacy/</td>
 </tr>
 <tr>
 <td>Google (Google Sign-In, Google Play, ML Kit, Google Fonts)</td>
-<td>Sign-in, purchases, on-device text recognition, PDF font download</td>
+<td>Sign-in, app distribution, on-device text recognition, PDF font download</td>
 <td>https://policies.google.com/privacy</td>
 </tr>
 <tr>
@@ -172,7 +159,6 @@
 <li><strong>Data on your device:</strong> until you delete it in the app or uninstall the app. Uninstalling removes all local data, including the receipts of every account on that device. Your device's own backups (iCloud or Google backup) may keep a copy, depending on your settings.</li>
 <li><strong>Firebase account:</strong> for as long as your account exists. It is deleted immediately when you use "Delete account" in the app, or within 30 days of an email request.</li>
 <li><strong>User-created backup files:</strong> remain in the location you selected until you delete them. Uninstalling SpendVista does not delete backup copies stored elsewhere.</li>
-<li><strong>Purchase and entitlement records:</strong> kept by Apple, Google and RevenueCat as needed to validate and restore Pro, under their respective policies and applicable legal requirements.</li>
 <li><strong>Support email:</strong> if you choose to contact us, the message and automatically included account details remain in our email records only as long as reasonably needed to resolve the request, prevent fraud and meet legal obligations.</li>
 </ul>
 <p>Local consent preferences, the banner-reward deadline and the downloaded rule cache remain on the device until replaced or app data is cleared. Advertising, consent and optional analytics records are retained according to the relevant provider’s policies and configured retention settings. Contact us about applicable retention or deletion requests. Disabling optional analytics stops new collection and does not automatically delete previously collected data.</p>
@@ -200,7 +186,7 @@
 <p><strong>Date d'entrée en vigueur :</strong> 1 novembre 2026</p>
 <p>SpendVista (« l'application ») est développée par Vu Khac, développeur indépendant établi en France (« nous »). Cette politique explique quelles données l'application traite, pourquoi, et quels sont vos choix. Pour les données personnelles décrites ici, nous sommes responsable du traitement au sens du Règlement général sur la protection des données (RGPD).</p>
 <p><strong>Contact :</strong> dreamingscientist@gmail.com</p>
-<p>Cette politique couvre l’édition gratuite de SpendVista financée par la publicité et les anciennes éditions payantes/Pro. La publicité et les statistiques facultatives décrites ci-dessous concernent les versions qui intègrent ces services. Le traitement des achats concerne uniquement les versions payantes/Pro ; l’édition gratuite n’initialise pas RevenueCat.</p>
+<p>Cette politique décrit la version actuelle de SpendVista, gratuite et financée par la publicité.</p>
 <h3>1. En bref</h3>
 <ul>
 <li><strong>Vos tickets et votre apprentissage personnel restent sur votre appareil.</strong> La lecture OCR est locale, sans synchronisation des tickets dans le cloud.</li>
@@ -226,20 +212,12 @@
 </ul>
 <p><strong>Lieu de stockage :</strong> Google Firebase Authentication (fourni par Google) conserve votre identifiant, votre e-mail, votre nom, le mode de connexion, ainsi que les dates de création du compte et de dernière connexion. Pour sécuriser la connexion, Firebase traite aussi des données techniques comme votre adresse IP et des informations sur votre appareil.</p>
 <p><strong>Finalité :</strong> créer et reconnaître votre compte, afin que les tickets de chaque compte restent séparés sur votre appareil.</p>
-<p><strong>Association des comptes :</strong> vous pouvez associer une connexion Apple et une connexion Google au même identifiant utilisateur Firebase. Les deux modes de connexion ouvrent alors le même compte SpendVista et, dans les versions payantes/Pro, utilisent le même droit d’accès Pro. L'application affiche les fournisseurs associés et leur adresse e-mail disponible ou l'adresse relais Apple. Les utilisateurs ne peuvent pas dissocier eux-mêmes les fournisseurs ; cela aide à empêcher le transfert répété de l'accès Pro entre des comptes sans lien.</p>
+<p><strong>Association des comptes :</strong> vous pouvez associer une connexion Apple et une connexion Google au même identifiant utilisateur Firebase. Les deux modes de connexion ouvrent alors le même compte SpendVista et utilisent les mêmes données locales de ce compte sur cet appareil. L'application affiche les fournisseurs associés et leur adresse e-mail disponible ou l'adresse relais Apple. Les utilisateurs ne peuvent pas dissocier eux-mêmes les fournisseurs. Contactez l’assistance si un fournisseur de connexion incorrect a été associé.</p>
 <p><strong>Base légale :</strong> l'exécution du contrat qui nous lie (fournir le compte que vous avez demandé) et notre intérêt légitime à sécuriser la connexion.</p>
 <p><strong>Ce qui ne se passe pas :</strong> vos tickets <strong>ne sont pas envoyés</strong> en ligne lorsque vous vous connectez. Chaque compte a sa propre base de données locale sur l'appareil. Après la connexion, l'application peut vous proposer de transférer vers votre compte les tickets créés en mode invité. Cela se fait uniquement avec votre accord, et uniquement sur votre appareil.</p>
-<h3>4. Édition gratuite et anciens achats Pro</h3>
-<p>L’édition gratuite actuelle inclut les fonctions de tickets, rapports et sauvegarde sans achat intégré. Les informations suivantes concernent uniquement les éditions payantes/Pro qui utilisent encore des services d’achat.</p>
-<p>Pro est un achat unique (non consommable), traité par Apple ou Google selon leurs propres politiques de confidentialité. RevenueCat vérifie l'achat et gère votre droit d'accès Pro.</p>
-<ul>
-<li>Nous <strong>ne recevons pas</strong> votre nom, votre carte bancaire ni votre adresse de facturation.</li>
-<li>RevenueCat traite un identifiant utilisateur pseudonyme de l'application, les informations sur le produit et la transaction, ainsi que les informations sur la boutique et la plateforme, afin de valider l'achat, débloquer Pro et le restaurer.</li>
-<li>Si vous connectez un compte SpendVista, le droit d'accès est associé à votre identifiant utilisateur Firebase afin que Pro soit disponible sur iOS et Android lorsque vous utilisez le même compte lié.</li>
-<li>Les images de vos tickets, le texte extrait et vos données de dépenses ne sont pas envoyés à RevenueCat.</li>
-<li><strong>Base légale :</strong> l'exécution du contrat qui nous lie.</li>
-</ul>
-<p>Pro débloque des fonctionnalités ; vos tickets et vos données de dépenses ne sont pas envoyés en ligne. Les identifiants d'achat et de compte nécessaires à la validation sont limités à ceux décrits ci-dessus.</p>
+<h3>4. Édition gratuite</h3>
+<p>SpendVista inclut les fonctions de tickets, rapports, analyses et sauvegarde sans option payante ni abonnement. La publicité finance le développement. Regarder une publicité récompensée est facultatif et ne débloque pas de fonctionnalités. La publicité et les choix de confidentialité sont décrits à la section 8.</p>
+<p>SpendVista ne traite pas d’achats intégrés et ne collecte ni données de carte bancaire ni informations de facturation.</p>
 <h3>5. Autorisations de l'appareil</h3>
 <table>
 <thead>
@@ -275,7 +253,7 @@
 <p><strong>Police chinoise pour les rapports PDF :</strong> lorsqu'un rapport PDF contient des caractères chinois, l'application télécharge une police gratuite depuis Google Fonts. Google peut voir votre adresse IP. Aucun contenu de ticket n'est envoyé.</p>
 <p><strong>Export et partage :</strong> lorsque vous exportez ou partagez des données (par exemple un résumé de vos dépenses), vous choisissez leur destination : e-mail, messagerie, fichiers, etc. Ensuite, cette application ou ce service traite les données selon sa propre politique.</p>
 <p><strong>Assistance pour les comptes associés :</strong> les utilisateurs connectés peuvent choisir d'ouvrir un brouillon d'e-mail d'assistance lorsqu'un compte Apple ou Google a été associé par erreur. Le brouillon contient automatiquement l'identifiant du compte SpendVista (identifiant utilisateur Firebase), le mode de connexion actuel, les identifiants des fournisseurs associés, les adresses e-mail disponibles ou les adresses relais Apple, ainsi que la version de l'application. L'utilisateur peut vérifier le brouillon, indiquer le compte incorrect et le compte de remplacement souhaité, puis doit envoyer lui-même le message. Rien n'est envoyé automatiquement. Nous utilisons ces informations uniquement pour identifier le bon compte, vérifier la demande, fournir l'assistance et empêcher les transferts non autorisés de droits d'accès.</p>
-<p><strong>Fichiers de sauvegarde :</strong> les utilisateurs de l’édition gratuite et les utilisateurs Pro peuvent créer une sauvegarde contenant les tickets, les articles extraits, les catégories personnalisées, les règles apprises pour les commerçants et le classement, ainsi que les réglages de langue et de devise. La sauvegarde est un fichier non chiffré. Vous choisissez où l'enregistrer ; SpendVista ne l'envoie pas, ne le conserve pas et n'y a pas accès. Vous êtes responsable de la sécurité du fichier et de la suppression des copies dont vous n'avez plus besoin.</p>
+<p><strong>Fichiers de sauvegarde :</strong> les utilisateurs peuvent créer une sauvegarde contenant les tickets, les articles extraits, les catégories personnalisées, les règles apprises pour les commerçants et le classement, ainsi que les réglages de langue et de devise. La sauvegarde est un fichier non chiffré. Vous choisissez où l'enregistrer ; SpendVista ne l'envoie pas, ne le conserve pas et n'y a pas accès. Vous êtes responsable de la sécurité du fichier et de la suppression des copies dont vous n'avez plus besoin.</p>
 <p><strong>Règles de reconnaissance publiques :</strong> les versions compatibles téléchargent un CSV vérifié depuis ce site GitHub Pages au démarrage, au maximum une fois toutes les 24 heures. Aucun contenu de ticket, règle personnelle ou détail de compte n’est envoyé. GitHub reçoit les informations de connexion habituelles, comme l’adresse IP. Les dernières règles valides sont conservées localement pour fonctionner hors ligne. Les corrections personnelles de catégories restent prioritaires. Aucun envoi automatique de règles communautaires n’est effectué. <a href="data/recognition-rules.csv">Voir le CSV public</a>.</p>
 <h3>8. Publicité, choix de confidentialité et statistiques facultatives</h3>
 <p><strong>Publicité :</strong> l’édition gratuite utilise Google AdMob (Google Mobile Ads SDK) pour les bannières, les publicités interstitielles lors de la fermeture des rapports et les publicités récompensées facultatives. Une publicité récompensée terminée masque les bannières pendant 30 minutes, sans désactiver les interstitiels. SpendVista ne fournit ni le contenu des tickets ni les détails du compte dans ses demandes publicitaires.</p>
@@ -301,18 +279,13 @@
 <td>https://firebase.google.com/support/privacy</td>
 </tr>
 <tr>
-<td>RevenueCat</td>
-<td>Éditions payantes/Pro uniquement : validation des achats et droits multiplateformes</td>
-<td>https://www.revenuecat.com/privacy</td>
-</tr>
-<tr>
 <td>Apple (Connexion avec Apple, App Store)</td>
-<td>Connexion, achats</td>
+<td>Connexion, distribution de l’application et avis sur la boutique</td>
 <td>https://www.apple.com/fr/legal/privacy/</td>
 </tr>
 <tr>
 <td>Google (Connexion Google, Google Play, ML Kit, Google Fonts)</td>
-<td>Connexion, achats, reconnaissance de texte sur l'appareil, téléchargement de police PDF</td>
+<td>Connexion, distribution de l’application, reconnaissance de texte sur l'appareil, téléchargement de police PDF</td>
 <td>https://policies.google.com/privacy?hl=fr</td>
 </tr>
 <tr>
@@ -333,7 +306,6 @@
 <li><strong>Données sur l'appareil :</strong> jusqu'à ce que vous les supprimiez dans l'application ou que vous désinstalliez l'application. La désinstallation efface toutes les données locales, y compris les tickets de tous les comptes de cet appareil. Les sauvegardes de votre appareil (iCloud ou Google) peuvent en garder une copie, selon vos réglages.</li>
 <li><strong>Compte Firebase :</strong> tant que votre compte existe. Il est supprimé immédiatement lorsque vous utilisez « Supprimer le compte » dans l'application, ou dans les 30 jours suivant une demande par e-mail.</li>
 <li><strong>Fichiers de sauvegarde créés par l'utilisateur :</strong> ils restent dans l'emplacement choisi jusqu'à ce que vous les supprimiez. La désinstallation de SpendVista ne supprime pas les copies de sauvegarde enregistrées ailleurs.</li>
-<li><strong>Historique d'achat et droits d'accès :</strong> conservés par Apple, Google et RevenueCat selon les besoins pour valider et restaurer Pro, conformément à leurs politiques respectives et aux obligations légales applicables.</li>
 <li><strong>E-mail d'assistance :</strong> si vous choisissez de nous contacter, le message et les informations de compte ajoutées automatiquement restent dans nos archives de messagerie uniquement pendant la durée raisonnablement nécessaire pour résoudre la demande, prévenir la fraude et respecter nos obligations légales.</li>
 </ul>
 <p>Les préférences de consentement, la date de fin de pause des bannières et le cache des règles restent sur l’appareil jusqu’à leur remplacement ou l’effacement des données de l’application. Les données publicitaires, de consentement et de statistiques facultatives sont conservées selon les politiques des prestataires et les paramètres de conservation configurés. Contactez-nous pour toute question sur la conservation ou demande d’effacement. Désactiver les statistiques facultatives arrête les nouvelles collectes sans supprimer automatiquement les anciennes.</p>
