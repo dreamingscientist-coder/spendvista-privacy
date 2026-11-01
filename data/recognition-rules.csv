@@ -1,0 +1,4 @@
+schema_version,type,match,merchant,category,subcategory,enabled
+1,merchant,LIDL,Lidl,,,true
+1,merchant,CARREFOUR,Carrefour,,,true
+1,item,SUCRINE BICOLORE,Lidl,Food,Vegetables,true
