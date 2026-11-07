@@ -4,3 +4,4 @@ schema_version,type,match,merchant,category,subcategory,enabled
 1,item,SUCRINE BICOLORE,Lidl,Food,Vegetables,true
 1,merchant,Action,Action,,,true
 1,merchant,Jardiland,Jardiland,Loisir,Jardin,true
+1,merchant,Gifi,Gifi,,,true
