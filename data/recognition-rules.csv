@@ -2,6 +2,7 @@ schema_version,type,match,merchant,category,subcategory,enabled
 1,merchant,LIDL,Lidl,,,true
 1,merchant,CARREFOUR,Carrefour,,,true
 1,item,SUCRINE BICOLORE,Lidl,Food,Vegetables,true
-1,merchant,Action,Action,,,true
-1,merchant,Jardiland,Jardiland,,,true
-1,merchant,Gifi,Gifi,,,true
+1,item,Jardiland,Jardiland,Leisure,Other Leisure,true
+1,item,Gémo,Gémo,Clothing,Clothing,true
+1,item,Le Bonheur Chocolat,Le Bonheur Chocolat,Food,Snacks,true
+1,item,Le Fournil De Yalo,Le Fournil De Yalo,Food,Bakery,true
